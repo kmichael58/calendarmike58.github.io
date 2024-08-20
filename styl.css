@@ -1,0 +1,67 @@
+body{
+  font-family: arial, sans-serif;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  margin: 0;
+  background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.calendar{
+  background-color: #111111;
+  border-radius: 10px;
+  box-shadow: 0 0 30px #222222;
+  overflow: hidden;
+  width: 300px;
+  color: #fff;
+  padding: 20px;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.btn{
+  cursor: pointer;
+}
+#month-year{
+  font-weight: bold;
+  font-size: 20px;
+}
+.weekdays, .days{
+  display: flex;
+  flex-wrap: wrap;
+}
+.days{
+  height: 240px;
+}
+.weekdays div, .days div{
+  width: 14.28%;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 5px;
+}
+.days div{
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.days div:hover{
+  background: #948E99;  
+  background: -webkit-linear-gradient(to right, #2E1437, #948E99);  
+  background: linear-gradient(to right, #2E1437, #948E99);
+  
+  color: orangered;
+}
+.days .today{
+  background: #C04848;  
+background: -webkit-linear-gradient(to right, #480048, #C04848); 
+background: linear-gradient(to right, #480048, #C04848);
+
+  color: #fff;
+}
+.days .fade{
+  color: #555;
+}
